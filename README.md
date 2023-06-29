@@ -1,34 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teste Leadster
 
-## Getting Started
+## 📑 Sobre o Projeto
 
-First, run the development server:
+Este projeto consiste em uma landing page desenvolvida como parte de um teste para um processo
+seletivo na Leadster. A landing page foi criada para demonstrar meus conhecimentos e habilidades em
+desenvolvimento web.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O objetivo principal do projeto é construir uma página inicial atrativa e responsiva, que exiba uma
+lista de vídeos e permita que os usuários os filtrem com base em determinados critérios, como
+`Agências`, `Chatbot`, `Marketing Digital`, `Geração de Leads` e `Mídia Paga`. Além disso, os
+usuários também podem ordenar os vídeos de acordo com sua preferência.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Decisões Tomadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Durante o desenvolvimento do projeto, foram tomadas algumas decisões importantes para garantir a
+qualidade, organização e eficiência do código. Abaixo estão as decisões tomadas e o motivo pelo qual
+foram escolhidas.
 
-## Learn More
+### 1. Uso do TypeScript:
 
-To learn more about Next.js, take a look at the following resources:
+- Decidi utilizar o TypeScript para fornecer tipagem estática ao código.
+- O TypeScript ajuda a detectar erros de tipo em tempo de desenvolvimento, melhorando a robustez e a
+  manutenção do código.
+- Além disso, o TypeScript oferece recursos avançados, como autocompletar e documentação integrada,
+  facilitando o desenvolvimento e a colaboração em equipe.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Configuração do Prettier:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Optei por configurar o Prettier para manter um estilo de código consistente e legível.
+- O Prettier automatiza a formatação do código, reduzindo conflitos de estilo e economizando tempo
+  na formatação manual.
+- A formatação consistente do código também melhora a legibilidade e a compreensão do código.
 
-## Deploy on Vercel
+### 3. Configuração do ESLint:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- O Next.js já inclui uma configuração padrão do ESLint, que fornece regras de linting para ajudar a
+  identificar e corrigir problemas no código.
+- O ESLint ajuda a manter um código limpo, consistente e seguindo as melhores práticas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 4. Configuração do Husky:
+
+- Configurei o Husky para executar scripts automaticamente antes dos commits.
+- O Husky permite garantir que o código esteja formatado corretamente e atenda aos padrões definidos
+  antes de ser enviado para o repositório.
+- Dessa forma, evitamos a inclusão de código mal formatado ou com erros no histórico de commits,
+  mantendo a qualidade e a consistência do código.
+
+### 5. Adoção do Styled Components:
+
+- Utilizei o Styled Components como biblioteca para estilização dos componentes.
+- O Styled Components foi sugerido no desafio e fornece uma abordagem moderna e conveniente para
+  escrever estilos CSS dentro dos componentes React.
+- Com o Styled Components, é possível escrever estilos encapsulados, facilitando a manutenção,
+  reutilização e a criação de componentes estilizados de forma mais intuitiva.
+
+<br>
+
+## 📚 Organização do Código
+
+TODO: Como organizei o código
+
+<br>
+
+## Funcionalidades
+
+TODO: Funcionalidades
+
+<br>
+
+## Instruções de Instalação
+
+TODO: Como rodar o projeto
+
+<br>
+
+## Instruções de Uso
+
+TODO: instruções de uso
+
+<br>
+
+## 👩 Autora
+
+- Nome: Paula Marinho
+- E-mail: [paulaandrezza25@gmail.com](mailto:paulaandrezza25@gmail.com)
+- GitHub: [Perfil no GitHub](https://github.com/paulaandrezza)
+- LinkedIn: [Perfil no LinkedIn](https://www.linkedin.com/in/paula-andrezza/)
