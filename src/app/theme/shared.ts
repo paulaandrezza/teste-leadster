@@ -46,7 +46,7 @@ export const Column = styled.div<ColumnProps>`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 16px;
 `;
@@ -59,8 +59,8 @@ export const DividerX = styled.div`
 `;
 
 export const DividerY = styled.div`
-  height: 24px;
-  width: 1px;
+  height: 16px;
+  width: 1.5px;
   background-color: ${theme.colors['text-primary']};
   margin: 0 8px;
 `;
