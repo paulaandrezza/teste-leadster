@@ -1,10 +1,9 @@
-import { theme } from '@/app/theme/theme';
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  padding: 100px 0;
+export const IconText = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-end;
   justify-content: center;
+  gap: 4px;
 `;

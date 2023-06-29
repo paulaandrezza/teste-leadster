@@ -6,6 +6,8 @@ interface Theme {
     'blue-secondary': string;
     'text-primary': string;
     divider: string;
+    'button-hover': string;
+    'button-active': string;
   };
 }
 
@@ -17,5 +19,7 @@ export const theme: Theme = {
     'blue-secondary': '#007EFF',
     'text-primary': '#1C3C50',
     divider: '#C8D4DD',
+    'button-hover': '#3095FC',
+    'button-active': '#60ACF9',
   },
 };

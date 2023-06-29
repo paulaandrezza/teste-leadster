@@ -1,7 +1,7 @@
 'use client';
 
-import { Container, Divider, Text, Textbold } from '@/app/theme/shared';
-import { Subtitle, Tag, Title, Wrapper } from './styles';
+import { Bold, Container, DividerX, Subtitle, Text } from '@/app/theme/shared';
+import { Tag, Title, Wrapper } from './styles';
 
 const Hero = () => {
   return (
@@ -10,10 +10,9 @@ const Hero = () => {
         <Tag>WEBINARS EXCLUSIVOS</Tag>
         <Subtitle>Menos Conversinha,</Subtitle>
         <Title>Mais Conversão</Title>
-        <Divider />
+        <DividerX />
         <Text>
-          Conheça as estratégias que <Textbold>mudaram o jogo</Textbold> e como aplicá-las no seu
-          négocio
+          Conheça as estratégias que <Bold>mudaram o jogo</Bold> e como aplicá-las no seu négocio
         </Text>
       </Wrapper>
     </Container>

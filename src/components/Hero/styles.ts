@@ -23,9 +23,3 @@ export const Title = styled.h2`
   font-size: 72px;
   font-weight: bold;
 `;
-
-export const Subtitle = styled.h2`
-  color: ${theme.colors['text-primary']};
-  font-size: 42px;
-  font-weight: 400;
-`;
