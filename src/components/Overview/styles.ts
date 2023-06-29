@@ -6,4 +6,5 @@ export const IconText = styled.div`
   align-items: flex-end;
   justify-content: center;
   gap: 4px;
+  white-space: nowrap;
 `;

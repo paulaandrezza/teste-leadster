@@ -37,7 +37,7 @@ const Overview = () => {
             <Button>VER DEMONSTRAÇÃO</Button>
             <Image src={selo} alt="Top 10 - Apps mais Usados | RD Station" layout="responsive" />
           </Row>
-          <Row>
+          <Row align="end">
             <IconText>
               <Image src={card} alt="Ícone de cartão não necessário" />
               <Label>

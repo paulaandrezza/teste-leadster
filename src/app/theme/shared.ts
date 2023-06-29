@@ -7,18 +7,22 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 100vw;
-  padding: 40px 200px;
+  padding: 40px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: ${({ color }) =>
     color == 'secondary' ? theme.colors['bg-secondary'] : theme.colors['bg-primary']};
-`;
 
-interface ColumnProps {
-  align?: string;
-}
+  @media (min-width: 768px) {
+    padding: 40px 100px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 40px 200px;
+  }
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -31,10 +35,14 @@ export const Flex = styled.div`
     gap: 64px;
 
     > * {
-      flex-basis: 50%;
+      flex-basis: 70%;
     }
   }
 `;
+
+interface ColumnProps {
+  align?: string;
+}
 
 export const Column = styled.div<ColumnProps>`
   display: flex;
@@ -43,10 +51,14 @@ export const Column = styled.div<ColumnProps>`
   justify-content: center;
 `;
 
-export const Row = styled.div`
+interface RowProps {
+  align?: string;
+}
+
+export const Row = styled.div<RowProps>`
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: ${(props) => (props.align == 'end' ? 'flex-end' : 'center')};
   justify-content: center;
   gap: 16px;
 `;
@@ -62,7 +74,6 @@ export const DividerY = styled.div`
   height: 16px;
   width: 1.5px;
   background-color: ${theme.colors['text-primary']};
-  margin: 0 8px;
 `;
 
 export const Subtitle = styled.h3`
