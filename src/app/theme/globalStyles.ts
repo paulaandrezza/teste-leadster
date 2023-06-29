@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors } from './theme';
+import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${colors['bg-color']};
+    background: ${theme.colors['bg-color']};
   }
 
   a {
