@@ -13,11 +13,7 @@ interface Props {
 
 const VideoFilter = ({ filter, setFilter }: Props) => {
   function selectFilter(option: IOption) {
-    if (filter === option.id) {
-      console.log(filter);
-      return setFilter(null);
-    }
-    console.log(filter);
+    if (filter === option.id) return setFilter(null);
     return setFilter(option.id);
   }
 
