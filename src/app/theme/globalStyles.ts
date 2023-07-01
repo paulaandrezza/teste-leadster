@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
   ol, ul {
     list-style: none;
   }
+
+  button, select {
+    font-family: inherit;
+  }
 `;
 
 export default GlobalStyle;
