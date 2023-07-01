@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from './theme';
 
 interface ContainerProps {
-  color?: string;
+  color?: 'secondary';
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -25,7 +25,7 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 interface FlexProps {
-  align?: string;
+  align?: 'top';
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -47,7 +47,7 @@ export const Flex = styled.div<FlexProps>`
 `;
 
 interface ColumnProps {
-  align?: string;
+  align?: 'left';
   gap?: boolean;
   wrap?: boolean;
 }
@@ -63,7 +63,7 @@ export const Column = styled.div<ColumnProps>`
 `;
 
 interface RowProps {
-  align?: string;
+  align?: 'end';
 }
 
 export const Row = styled.div<RowProps>`
@@ -130,12 +130,13 @@ export const Button = styled.button`
 interface ListProps {
   row?: boolean;
   gap?: boolean;
+  align?: 'start';
 }
 
 export const List = styled.ul<ListProps>`
   display: flex;
   flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-  align-items: center;
+  align-items: ${(props) => (props.align == 'start' ? 'flex-start' : 'center')};
   justify-content: center;
   gap: ${(props) => props.gap && '8px'};
 `;

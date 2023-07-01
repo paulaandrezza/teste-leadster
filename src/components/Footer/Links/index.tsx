@@ -12,7 +12,7 @@ const Links = () => {
       {footerLinks.map((item, index) => (
         <Column key={index} gap align="left">
           <Text fontWeight="bold">{item.category}</Text>
-          <List>
+          <List align="start">
             {item.links.map((link) => (
               <ListItem key={link.name}>
                 <Link href={link.url} target="_blank">
