@@ -100,7 +100,6 @@ export const Text = styled.p<TextProps>`
     props.fontSize ? theme.fontSizes[props.fontSize] : theme.fontSizes.normal};
   font-weight: ${(props) =>
     props.fontWeight ? theme.fontWeights[props.fontWeight] : theme.fontWeights.normal};
-  margin-top: 8px;
 `;
 
 export const Bold = styled.span`
@@ -127,3 +126,18 @@ export const Button = styled.button`
     background-color: ${theme.colors['button-active']};
   }
 `;
+
+interface ListProps {
+  row?: boolean;
+  gap?: boolean;
+}
+
+export const List = styled.ul<ListProps>`
+  display: flex;
+  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
+  align-items: center;
+  justify-content: center;
+  gap: ${(props) => props.gap && '8px'};
+`;
+
+export const ListItem = styled.li``;

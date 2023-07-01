@@ -1,10 +1,10 @@
 'use client';
 
-import { Column, Flex, Row, Text } from '@/app/theme/shared';
+import { Column, Flex, List, ListItem, Row, Text } from '@/app/theme/shared';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { Wrapper } from '../styles';
 import { footerLinks } from './footerLinks';
-import { Label, Link, List, ListItem, SocialBubble } from './styles';
+import { Label, Link, SocialBubble } from './styles';
 
 const Links = () => {
   return (
