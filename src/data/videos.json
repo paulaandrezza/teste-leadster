@@ -2,11 +2,11 @@
   {
     "title": "Como aumentar sua geração de Leads feat. Traktor",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 1,
     "category": {
-      "label": "Marketing Digital",
-      "id": 3
+      "label": "Agências",
+      "id": 1
     },
     "publicationDate": "2023-06-28",
     "videoLink": "https://www.youtube.com/embed/9L9ZkGX1p_k"
@@ -14,7 +14,7 @@
   {
     "title": "Como otimizar seu chatbot para melhorar as interações",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 2,
     "category": {
       "label": "Chatbot",
@@ -26,7 +26,7 @@
   {
     "title": "Estratégias eficazes de marketing digital para alavancar seus negócios",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 3,
     "category": {
       "label": "Marketing Digital",
@@ -38,7 +38,7 @@
   {
     "title": "Como aumentar sua geração de leads com estratégias eficientes",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 4,
     "category": {
       "label": "Geração de Leads",
@@ -50,7 +50,7 @@
   {
     "title": "Dicas para criar anúncios eficazes usando mídia paga",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 5,
     "category": {
       "label": "Mídia Paga",
@@ -62,7 +62,7 @@
   {
     "title": "Como melhorar o desempenho de sua agência de marketing",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 6,
     "category": {
       "label": "Agências",
@@ -74,7 +74,7 @@
   {
     "title": "Estratégias eficientes para melhorar a interação com seu chatbot",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 7,
     "category": {
       "label": "Chatbot",
@@ -86,7 +86,7 @@
   {
     "title": "Dicas essenciais de marketing digital para impulsionar seus negócios",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 8,
     "category": {
       "label": "Marketing Digital",
@@ -98,7 +98,7 @@
   {
     "title": "Táticas comprovadas para aumentar a geração de leads",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 9,
     "category": {
       "label": "Geração de Leads",
@@ -110,7 +110,7 @@
   {
     "title": "Estratégias eficazes de mídia paga para obter melhores resultados",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 10,
     "category": {
       "label": "Mídia Paga",
@@ -122,7 +122,7 @@
   {
     "title": "Como maximizar os resultados da sua agência de marketing",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 11,
     "category": {
       "label": "Agências",
@@ -134,7 +134,7 @@
   {
     "title": "Dicas para otimizar as interações do seu chatbot",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 12,
     "category": {
       "label": "Chatbot",
@@ -146,7 +146,7 @@
   {
     "title": "Estratégias avançadas de marketing digital para alavancar seus negócios",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 13,
     "category": {
       "label": "Marketing Digital",
@@ -158,7 +158,7 @@
   {
     "title": "Estratégias comprovadas para gerar mais leads",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 14,
     "category": {
       "label": "Geração de Leads",
@@ -170,7 +170,7 @@
   {
     "title": "Estratégias avançadas de mídia paga para obter resultados superiores",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 15,
     "category": {
       "label": "Mídia Paga",
@@ -182,7 +182,7 @@
   {
     "title": "Como impulsionar sua agência de marketing digital",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 16,
     "category": {
       "label": "Agências",
@@ -194,7 +194,7 @@
   {
     "title": "Melhores práticas para otimizar as interações do seu chatbot",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 17,
     "category": {
       "label": "Chatbot",
@@ -206,7 +206,7 @@
   {
     "title": "Técnicas avançadas de marketing digital para impulsionar seus negócios",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 18,
     "category": {
       "label": "Marketing Digital",
@@ -218,7 +218,7 @@
   {
     "title": "Estratégias efetivas para aumentar a geração de leads",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 19,
     "category": {
       "label": "Geração de Leads",
@@ -230,7 +230,7 @@
   {
     "title": "Estratégias avançadas de mídia paga para maximizar resultados",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna nibh, pulvinar eget risus ac, posuere vehicula purus. Aenean sed gravida odio. Etiam porta lacinia ipsum, et faucibus eros molestie sit amet. In ex dui, pharetra sit amet arcu eget, facilisis semper enim. Etiam egestas quam ac euismod vulputate. Nam lacinia felis eget mauris dapibus tristique. In a pulvinar purus, sit amet ornare est.",
-    "photo": "/assets/thumbnail.png",
+    "photo": "/static/thumbnail.png",
     "id": 20,
     "category": {
       "label": "Mídia Paga",
