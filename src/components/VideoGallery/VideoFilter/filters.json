@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Agências",
+    "id": 1
+  },
+  {
+    "label": "Chatbot",
+    "id": 2
+  },
+  {
+    "label": "Marketing Digital",
+    "id": 3
+  },
+  {
+    "label": "Geração de Leads",
+    "id": 4
+  },
+  {
+    "label": "Mídia Paga",
+    "id": 5
+  }
+]
