@@ -20,6 +20,6 @@ export const Tag = styled.p`
 
 export const Title = styled.h2`
   color: ${theme.colors['blue-primary']};
-  font-size: 72px;
-  font-weight: bold;
+  font-size: ${theme.fontSizes.title};
+  font-weight: 900;
 `;

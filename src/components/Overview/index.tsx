@@ -8,9 +8,7 @@ import {
   DividerX,
   DividerY,
   Flex,
-  Label,
   Row,
-  Subtitle,
   Text,
 } from '@/app/theme/shared';
 import comparativo from '@public/comparativo_img_CTA.png';
@@ -26,10 +24,10 @@ const Overview = () => {
       <Flex>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
         <Column align={'left'}>
-          <Subtitle>
+          <Text fontSize="subtitle">
             Pronto para triplicar sua <Bold>Geração de leads?</Bold>
-          </Subtitle>
-          <Text>
+          </Text>
+          <Text fontWeight={'subtitle'}>
             Criação e ativação em <Bold>4 minutos.</Bold>
           </Text>
           <DividerX />
@@ -40,16 +38,16 @@ const Overview = () => {
           <Row align="end">
             <IconText>
               <Image src={card} alt="Ícone de cartão não necessário" />
-              <Label>
+              <Text>
                 <Bold>Não</Bold> é necessário Cartão de Crédito
-              </Label>
+              </Text>
             </IconText>
             <DividerY />
             <IconText>
               <Image src={rating} alt="4.9/5 estrelas" />
-              <Label>
+              <Text>
                 <Bold>4.9/5</Bold> média de satisfação
-              </Label>
+              </Text>
             </IconText>
           </Row>
         </Column>

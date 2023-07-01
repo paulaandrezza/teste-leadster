@@ -76,23 +76,19 @@ export const DividerY = styled.div`
   background-color: ${theme.colors['text-primary']};
 `;
 
-export const Subtitle = styled.h3`
-  color: ${theme.colors['text-primary']};
-  font-size: 42px;
-  font-weight: 400;
-`;
+interface TextProps {
+  text?: string;
+  fontSize?: keyof typeof theme.fontSizes;
+  fontWeight?: keyof typeof theme.fontWeights;
+}
 
-export const Text = styled.p`
-  color: ${theme.colors['text-primary']};
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 8px;
-`;
-
-export const Label = styled.p`
-  color: ${theme.colors['text-primary']};
-  font-size: 14px;
-  font-weight: 400;
+export const Text = styled.p<TextProps>`
+  color: ${(props) =>
+    props.text == 'secondary' ? theme.colors['text-secondary'] : theme.colors['text-primary']};
+  font-size: ${(props) =>
+    props.fontSize ? theme.fontSizes[props.fontSize] : theme.fontSizes.normal};
+  font-weight: ${(props) =>
+    props.fontWeight ? theme.fontWeights[props.fontWeight] : theme.fontWeights.normal};
   margin-top: 8px;
 `;
 
