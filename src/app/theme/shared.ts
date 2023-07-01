@@ -49,6 +49,7 @@ export const Flex = styled.div<FlexProps>`
 interface ColumnProps {
   align?: string;
   gap?: boolean;
+  wrap?: boolean;
 }
 
 export const Column = styled.div<ColumnProps>`
@@ -58,7 +59,7 @@ export const Column = styled.div<ColumnProps>`
   justify-content: center;
   gap: ${(props) => props.gap && '32px'};
   flex: 1;
-  white-space: nowrap;
+  white-space: ${(props) => (props.wrap ? 'wrap' : 'nowrap')};
 `;
 
 interface RowProps {

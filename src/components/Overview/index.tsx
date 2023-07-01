@@ -23,7 +23,7 @@ const Overview = () => {
     <Container color="secondary">
       <Flex>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
-        <Column align={'left'}>
+        <Column align={'left'} wrap>
           <Text fontSize="subtitle">
             Pronto para triplicar sua <Bold>Geração de leads?</Bold>
           </Text>
