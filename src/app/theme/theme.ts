@@ -9,6 +9,7 @@ interface Theme {
     divider: string;
     'button-hover': string;
     'button-active': string;
+    bubble: string;
   };
   fontSizes: {
     small: string;
@@ -38,6 +39,7 @@ export const theme: Theme = {
     divider: '#C8D4DD',
     'button-hover': '#3095FC',
     'button-active': '#60ACF9',
+    bubble: '#F7F8FB',
   },
   fontSizes: {
     small: '0.75rem',

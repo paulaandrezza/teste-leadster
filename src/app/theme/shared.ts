@@ -24,15 +24,21 @@ export const Container = styled.div<ContainerProps>`
   }
 `;
 
-export const Flex = styled.div`
+interface FlexProps {
+  align?: string;
+}
+
+export const Flex = styled.div<FlexProps>`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   @media (min-width: 1024px) {
     flex-direction: row;
+    align-items: ${(props) => (props.align == 'top' ? 'flex-start' : 'center')};
     gap: 64px;
+    width: 100%;
 
     > * {
       flex-basis: 70%;
@@ -42,6 +48,7 @@ export const Flex = styled.div`
 
 interface ColumnProps {
   align?: string;
+  gap?: boolean;
 }
 
 export const Column = styled.div<ColumnProps>`
@@ -49,6 +56,9 @@ export const Column = styled.div<ColumnProps>`
   flex-direction: column;
   align-items: ${(props) => (props.align == 'left' ? 'flex-start' : 'center')};
   justify-content: center;
+  gap: ${(props) => props.gap && '32px'};
+  flex: 1;
+  white-space: nowrap;
 `;
 
 interface RowProps {
@@ -65,7 +75,7 @@ export const Row = styled.div<RowProps>`
 
 export const DividerX = styled.div`
   width: 100%;
-  height: 1px;
+  height: 0.5px;
   background-color: ${theme.colors.divider};
   margin: 12px 0;
 `;
