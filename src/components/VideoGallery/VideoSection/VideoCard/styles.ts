@@ -13,8 +13,8 @@ export const Box = styled.div`
 
 export const BoxImage = styled(Image)`
   background-size: cover;
-  width: 400px;
-  height: 100%;
+  width: 362px;
+  height: 204px;
   border-radius: 16px 16px 0 0;
 `;
 

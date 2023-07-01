@@ -3,8 +3,8 @@
 import { Container, DividerX, Flex } from '@/app/theme/shared';
 import { useState } from 'react';
 import OrderBy from './OrderBy';
-import VideoCard from './VideoCard';
 import VideoFilter from './VideoFilter';
+import VideoSection from './VideoSection';
 
 const VideoGallery = () => {
   const [filter, setFilter] = useState<number | null>(null);
@@ -17,7 +17,7 @@ const VideoGallery = () => {
         <OrderBy order={order} setOrder={setOrder} />
       </Flex>
       <DividerX />
-      <VideoCard />
+      <VideoSection />
     </Container>
   );
 };
