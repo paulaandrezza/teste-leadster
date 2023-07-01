@@ -9,6 +9,7 @@ export const ButtonSecondary = styled.button`
   border-radius: 24px;
   border: 1px ${theme.colors['text-primary']} solid;
   white-space: nowrap;
+  font-size: ${theme.fontSizes.normal};
 
   cursor: pointer;
 
@@ -40,8 +41,7 @@ export const Select = styled.select`
   border-radius: 8px;
   border: 1px solid ${theme.colors['text-primary']};
   white-space: nowrap;
-
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: ${theme.fontSizes.normal};
 
   cursor: pointer;
 
@@ -53,6 +53,5 @@ export const Select = styled.select`
 
   &:active {
     background-color: ${theme.colors['blue-primary']};
-    color: ${theme.colors['bg-primary']};
   }
 `;
