@@ -77,14 +77,14 @@ export const DividerY = styled.div`
 `;
 
 interface TextProps {
-  text?: string;
+  textColor?: string;
   fontSize?: keyof typeof theme.fontSizes;
   fontWeight?: keyof typeof theme.fontWeights;
 }
 
 export const Text = styled.p<TextProps>`
   color: ${(props) =>
-    props.text == 'secondary' ? theme.colors['text-secondary'] : theme.colors['text-primary']};
+    props.textColor == 'secondary' ? theme.colors['text-secondary'] : theme.colors['text-primary']};
   font-size: ${(props) =>
     props.fontSize ? theme.fontSizes[props.fontSize] : theme.fontSizes.normal};
   font-weight: ${(props) =>
