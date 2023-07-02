@@ -22,4 +22,5 @@ export const Title = styled.h2`
   color: ${theme.colors['blue-primary']};
   font-size: ${theme.fontSizes.title};
   font-weight: 900;
+  text-align: center;
 `;
