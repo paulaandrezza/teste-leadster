@@ -20,7 +20,7 @@ const VideoGallery = () => {
         <OrderBy order={order} setOrder={setOrder} />
       </Flex>
       <DividerX />
-      <VideoSection filter={filter} order={order} setVideoCount={setVideoCount} />
+      <VideoSection filter={filter} order={order} setVideoCount={setVideoCount} page={page} />
       <DividerX />
       <Pagination page={page} setPage={setPage} videoCount={videoCount} />
     </Container>

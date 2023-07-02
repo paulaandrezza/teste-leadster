@@ -11,9 +11,10 @@ interface Props {
   filter: number | null;
   order: string;
   setVideoCount: React.Dispatch<React.SetStateAction<number>>;
+  page: number;
 }
 
-const VideoSection = ({ filter, order, setVideoCount }: Props) => {
+const VideoSection = ({ filter, order, setVideoCount, page }: Props) => {
   const [list, setList] = useState(videos);
 
   function filterBy(id: number) {
@@ -39,8 +40,12 @@ const VideoSection = ({ filter, order, setVideoCount }: Props) => {
   useEffect(() => {
     const newList = videos.filter((item) => filterBy(item.category.id));
     setVideoCount(newList.length);
-    setList(orderBy(newList));
-  }, [filter, order]);
+
+    const startIndex = page * 9;
+    const endIndex = startIndex + 9;
+
+    setList(orderBy(newList).slice(startIndex, endIndex));
+  }, [filter, order, page]);
 
   return (
     <Container>
