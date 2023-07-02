@@ -1,10 +1,14 @@
 [
   {
+    "name": "",
+    "value": ""
+  },
+  {
     "name": "Data de publicação",
-    "value": "DataDePublicação"
+    "value": "date"
   },
   {
     "name": "Ordem Alfabetica",
-    "value": "ordemAlfabetica"
+    "value": "alphabetical"
   }
 ]

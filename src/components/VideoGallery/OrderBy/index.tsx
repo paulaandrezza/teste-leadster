@@ -10,14 +10,19 @@ interface Props {
 }
 
 const OrderBy = ({ order, setOrder }: Props) => {
+  const handleOrderChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedOrder = event.target.value;
+    setOrder(selectedOrder);
+  };
+
   return (
     <Wrapper>
       <label htmlFor="orderBy">
         <Text fontWeight={'bold'}>Ordenar por</Text>
       </label>
-      <Select name="orderBy" id="orderBy">
+      <Select name="orderBy" id="orderBy" onChange={handleOrderChange}>
         {options.map((option) => (
-          <option key={option.value} value="option.value" onClick={() => setOrder(option.value)}>
+          <option key={option.value} value={option.value}>
             {option.name}
           </option>
         ))}
