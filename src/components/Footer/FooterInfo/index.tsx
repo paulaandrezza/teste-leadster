@@ -1,6 +1,7 @@
 'use client';
 
-import { Flex, Text } from '@/app/theme/shared';
+import { Text } from '@/app/theme/shared';
+import { Flex } from './styles';
 
 const FooterInfo = () => {
   return (
