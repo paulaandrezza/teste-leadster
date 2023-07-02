@@ -24,7 +24,10 @@ export const NumberPage = styled.button`
     color: ${theme.colors['blue-primary']};
   }
 
-  &:active {
+  &:active,
+  &.selected {
     background-color: ${theme.colors['blue-primary']};
+    color: ${theme.colors['bg-primary']};
+    border: 1px ${theme.colors['blue-primary']} solid;
   }
 `;

@@ -4,7 +4,7 @@ import { Container, Row, Text } from '@/app/theme/shared';
 import { NumberPage } from './styles';
 
 interface Props {
-  page: number | null;
+  page: number;
   setPage: React.Dispatch<React.SetStateAction<number | null>>;
   videoCount: number;
 }
@@ -15,7 +15,13 @@ const Pagination = ({ page, setPage, videoCount }: Props) => {
       <Row>
         <Text fontWeight="bold">Página</Text>
         {Array.from({ length: Math.ceil(videoCount / 9) }, (_, index) => (
-          <NumberPage key={index}>{index + 1}</NumberPage>
+          <NumberPage
+            className={page === index ? 'selected' : ''}
+            key={index}
+            onClick={() => setPage(index)}
+          >
+            {index + 1}
+          </NumberPage>
         ))}
       </Row>
     </Container>

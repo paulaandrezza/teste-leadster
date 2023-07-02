@@ -10,7 +10,7 @@ import VideoSection from './VideoSection';
 const VideoGallery = () => {
   const [filter, setFilter] = useState<number | null>(null);
   const [order, setOrder] = useState('');
-  const [page, setPage] = useState<number | null>(null);
+  const [page, setPage] = useState(0);
   const [videoCount, setVideoCount] = useState(0);
 
   return (
