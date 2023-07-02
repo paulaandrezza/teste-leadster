@@ -5,7 +5,7 @@ import { NumberPage } from './styles';
 
 interface Props {
   page: number;
-  setPage: React.Dispatch<React.SetStateAction<number | null>>;
+  setPage: React.Dispatch<React.SetStateAction<number>>;
   videoCount: number;
 }
 
