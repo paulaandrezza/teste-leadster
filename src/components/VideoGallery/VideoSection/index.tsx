@@ -2,7 +2,7 @@
 
 import { Container } from '@/app/theme/shared';
 import videos from '@/data/videos.json';
-import { Videos } from '@/types/videos';
+import { Video, Videos } from '@/types/videos';
 import { useEffect, useState } from 'react';
 import VideoCard from './VideoCard';
 import { Items } from './styles';
@@ -12,9 +12,10 @@ interface Props {
   order: string;
   setVideoCount: React.Dispatch<React.SetStateAction<number>>;
   page: number;
+  onVideoClick: (video: Video) => void;
 }
 
-const VideoSection = ({ filter, order, setVideoCount, page }: Props) => {
+const VideoSection = ({ filter, order, setVideoCount, page, onVideoClick }: Props) => {
   const [list, setList] = useState(videos);
 
   function filterBy(id: number) {
@@ -51,7 +52,7 @@ const VideoSection = ({ filter, order, setVideoCount, page }: Props) => {
     <Container>
       <Items>
         {list.map((video) => (
-          <VideoCard key={video.id} {...video} />
+          <VideoCard key={video.id} {...video} onClick={() => onVideoClick(video)} />
         ))}
       </Items>
     </Container>

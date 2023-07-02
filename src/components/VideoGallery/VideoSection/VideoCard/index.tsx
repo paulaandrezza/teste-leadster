@@ -5,9 +5,13 @@ import { Video } from '@/types/videos';
 import photo from '@public/thumbnail.png';
 import { Box, BoxImage, CardContent } from './styles';
 
-const VideoCard = ({ title }: Video) => {
+interface Props extends Video {
+  onClick: () => void;
+}
+
+const VideoCard = ({ title, onClick }: Props) => {
   return (
-    <Box>
+    <Box onClick={onClick}>
       <BoxImage src={photo} alt="Prévia vídeo" />
       <CardContent>
         <Text fontWeight="bold">{title}</Text>
