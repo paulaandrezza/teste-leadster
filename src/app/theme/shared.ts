@@ -85,6 +85,10 @@ export const DividerY = styled.div`
   height: 16px;
   width: 1.5px;
   background-color: ${theme.colors['text-primary']};
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 interface TextProps {

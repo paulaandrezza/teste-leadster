@@ -16,7 +16,7 @@ import card from '@public/no-card-dark.webp';
 import rating from '@public/rating.webp';
 import selo from '@public/selo_RD.png';
 import Image from 'next/image';
-import { IconText } from './styles';
+import { FlexInfo, IconText } from './styles';
 
 const Overview = () => {
   return (
@@ -33,9 +33,9 @@ const Overview = () => {
           <DividerX />
           <Row>
             <Button>VER DEMONSTRAÇÃO</Button>
-            <Image src={selo} alt="Top 10 - Apps mais Usados | RD Station" layout="responsive" />
+            <Image src={selo} alt="Top 10 - Apps mais Usados | RD Station" height="50" />
           </Row>
-          <Row $align="end">
+          <FlexInfo>
             <IconText>
               <Image src={card} alt="Ícone de cartão não necessário" />
               <Text>
@@ -49,7 +49,7 @@ const Overview = () => {
                 <Bold>4.9/5</Bold> média de satisfação
               </Text>
             </IconText>
-          </Row>
+          </FlexInfo>
         </Column>
       </Flex>
     </Container>
