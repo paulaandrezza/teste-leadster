@@ -10,7 +10,7 @@ import { Wrapper } from './styles';
 const Footer = () => {
   return (
     <Container>
-      <Column gap>
+      <Column $gap>
         <Wrapper>
           <Image src={logo} alt="leadster-logo"></Image>
           <Text fontSize="small">Transformando visitantes em clientes.</Text>

@@ -23,7 +23,7 @@ const Overview = () => {
     <Container color="secondary">
       <Flex>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
-        <Column align={'left'} wrap>
+        <Column $align={'left'} $wrap>
           <Text fontSize="subtitle">
             Pronto para triplicar sua <Bold>Geração de leads?</Bold>
           </Text>
@@ -35,7 +35,7 @@ const Overview = () => {
             <Button>VER DEMONSTRAÇÃO</Button>
             <Image src={selo} alt="Top 10 - Apps mais Usados | RD Station" layout="responsive" />
           </Row>
-          <Row align="end">
+          <Row $align="end">
             <IconText>
               <Image src={card} alt="Ícone de cartão não necessário" />
               <Text>

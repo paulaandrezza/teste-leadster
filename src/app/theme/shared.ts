@@ -25,7 +25,7 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 interface FlexProps {
-  align?: 'top';
+  $align?: 'top';
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -36,7 +36,7 @@ export const Flex = styled.div<FlexProps>`
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    align-items: ${(props) => (props.align == 'top' ? 'flex-start' : 'center')};
+    align-items: ${(props) => (props.$align == 'top' ? 'flex-start' : 'center')};
     gap: 64px;
     width: 100%;
 
@@ -47,29 +47,29 @@ export const Flex = styled.div<FlexProps>`
 `;
 
 interface ColumnProps {
-  align?: 'left';
-  gap?: boolean;
-  wrap?: boolean;
+  $align?: 'left';
+  $gap?: boolean;
+  $wrap?: boolean;
 }
 
 export const Column = styled.div<ColumnProps>`
   display: flex;
   flex-direction: column;
-  align-items: ${(props) => (props.align == 'left' ? 'flex-start' : 'center')};
+  align-items: ${(props) => (props.$align == 'left' ? 'flex-start' : 'center')};
   justify-content: center;
-  gap: ${(props) => props.gap && '32px'};
+  gap: ${(props) => props.$gap && '32px'};
   flex: 1;
-  white-space: ${(props) => (props.wrap ? 'wrap' : 'nowrap')};
+  white-space: ${(props) => (props.$wrap ? 'wrap' : 'nowrap')};
 `;
 
 interface RowProps {
-  align?: 'end';
+  $align?: 'end';
 }
 
 export const Row = styled.div<RowProps>`
   display: flex;
   flex-direction: row;
-  align-items: ${(props) => (props.align == 'end' ? 'flex-end' : 'center')};
+  align-items: ${(props) => (props.$align == 'end' ? 'flex-end' : 'center')};
   justify-content: center;
   gap: 16px;
 `;
@@ -88,14 +88,16 @@ export const DividerY = styled.div`
 `;
 
 interface TextProps {
-  textColor?: string;
+  $textColor?: string;
   fontSize?: keyof typeof theme.fontSizes;
   fontWeight?: keyof typeof theme.fontWeights;
 }
 
 export const Text = styled.p<TextProps>`
   color: ${(props) =>
-    props.textColor == 'secondary' ? theme.colors['text-secondary'] : theme.colors['text-primary']};
+    props.$textColor == 'secondary'
+      ? theme.colors['text-secondary']
+      : theme.colors['text-primary']};
   font-size: ${(props) =>
     props.fontSize ? theme.fontSizes[props.fontSize] : theme.fontSizes.normal};
   font-weight: ${(props) =>
@@ -128,17 +130,17 @@ export const Button = styled.button`
 `;
 
 interface ListProps {
-  row?: boolean;
-  gap?: boolean;
-  align?: 'start';
+  $row?: boolean;
+  $gap?: boolean;
+  $align?: 'start';
 }
 
 export const List = styled.ul<ListProps>`
   display: flex;
-  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-  align-items: ${(props) => (props.align == 'start' ? 'flex-start' : 'center')};
+  flex-direction: ${(props) => (props.$row ? 'row' : 'column')};
+  align-items: ${(props) => (props.$align == 'start' ? 'flex-start' : 'center')};
   justify-content: center;
-  gap: ${(props) => props.gap && '8px'};
+  gap: ${(props) => props.$gap && '8px'};
 `;
 
 export const ListItem = styled.li``;

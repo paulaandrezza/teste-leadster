@@ -18,7 +18,7 @@ const VideoFilter = ({ filter, setFilter }: Props) => {
   }
 
   return (
-    <List row gap>
+    <List $row $gap>
       {filters.map((option) => (
         <ListItem key={option.id}>
           <ButtonSecondary

@@ -24,12 +24,12 @@ export const Label = styled.span`
 `;
 
 interface WrapperProps {
-  gap?: boolean;
+  $gap?: boolean;
 }
 
 export const Wrapper = styled.div<WrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: ${(props) => props.gap && '32px'};
+  gap: ${(props) => props.$gap && '32px'};
 `;

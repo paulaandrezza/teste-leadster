@@ -18,7 +18,3 @@ export const SocialBubble = styled.a`
 export const Label = styled.span`
   color: ${theme.colors['text-primary']};
 `;
-
-interface WrapperProps {
-  gap?: boolean;
-}
