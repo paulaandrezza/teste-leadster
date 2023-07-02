@@ -10,9 +10,10 @@ import { Items } from './styles';
 interface Props {
   filter: number | null;
   order: string;
+  setVideoCount: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const VideoSection = ({ filter, order }: Props) => {
+const VideoSection = ({ filter, order, setVideoCount }: Props) => {
   const [list, setList] = useState(videos);
 
   function filterBy(id: number) {
@@ -37,6 +38,7 @@ const VideoSection = ({ filter, order }: Props) => {
 
   useEffect(() => {
     const newList = videos.filter((item) => filterBy(item.category.id));
+    setVideoCount(newList.length);
     setList(orderBy(newList));
   }, [filter, order]);
 

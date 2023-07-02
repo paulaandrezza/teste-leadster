@@ -11,6 +11,7 @@ const VideoGallery = () => {
   const [filter, setFilter] = useState<number | null>(null);
   const [order, setOrder] = useState('');
   const [page, setPage] = useState<number | null>(null);
+  const [videoCount, setVideoCount] = useState(0);
 
   return (
     <Container>
@@ -19,9 +20,9 @@ const VideoGallery = () => {
         <OrderBy order={order} setOrder={setOrder} />
       </Flex>
       <DividerX />
-      <VideoSection filter={filter} order={order} />
+      <VideoSection filter={filter} order={order} setVideoCount={setVideoCount} />
       <DividerX />
-      <Pagination page={page} setPage={setPage} />
+      <Pagination page={page} setPage={setPage} videoCount={videoCount} />
     </Container>
   );
 };
