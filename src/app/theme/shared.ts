@@ -33,6 +33,7 @@ export const Flex = styled.div<FlexProps>`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -43,6 +44,20 @@ export const Flex = styled.div<FlexProps>`
     > * {
       flex-basis: 70%;
     }
+  }
+`;
+
+export const FlexSB = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 0;
   }
 `;
 
@@ -145,6 +160,7 @@ export const List = styled.ul<ListProps>`
   align-items: ${(props) => (props.$align == 'start' ? 'flex-start' : 'center')};
   justify-content: center;
   gap: ${(props) => props.$gap && '8px'};
+  flex-wrap: wrap;
 `;
 
 export const ListItem = styled.li``;

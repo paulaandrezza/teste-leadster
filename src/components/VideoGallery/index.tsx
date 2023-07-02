@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, DividerX, Flex } from '@/app/theme/shared';
+import { Container, DividerX, FlexSB } from '@/app/theme/shared';
 import { Video } from '@/types/videos';
 import { useState } from 'react';
 import OrderBy from './OrderBy';
@@ -28,10 +28,10 @@ const VideoGallery = () => {
 
   return (
     <Container>
-      <Flex>
+      <FlexSB>
         <VideoFilter filter={filter} setFilter={setFilter} />
         <OrderBy order={order} setOrder={setOrder} />
-      </Flex>
+      </FlexSB>
       <DividerX />
       <VideoSection
         filter={filter}
