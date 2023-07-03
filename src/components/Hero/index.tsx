@@ -12,7 +12,7 @@ const Hero = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
-      color="secondary"
+      $color="secondary"
     >
       <Wrapper as={motion.div} variants={cardVariants}>
         <Tag>WEBINARS EXCLUSIVOS</Tag>

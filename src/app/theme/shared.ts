@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from './theme';
 
 interface ContainerProps {
-  color?: 'secondary';
+  $color?: 'secondary';
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -12,14 +12,18 @@ export const Container = styled.div<ContainerProps>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${({ color }) =>
-    color == 'secondary' ? theme.colors['bg-secondary'] : theme.colors['bg-primary']};
+  background-color: ${(props) =>
+    props.$color == 'secondary' ? theme.colors['bg-secondary'] : theme.colors['bg-primary']};
 
   @media (min-width: 768px) {
-    padding: 40px 100px;
+    padding: 40px 40px;
   }
 
   @media (min-width: 1024px) {
+    padding: 40px 100px;
+  }
+
+  @media (min-width: 1440px) {
     padding: 40px 200px;
   }
 `;
@@ -41,10 +45,6 @@ export const Flex = styled.div<FlexProps>`
     align-items: ${(props) => (props.$align == 'top' ? 'flex-start' : 'center')};
     gap: 64px;
     width: 100%;
-
-    > * {
-      flex-basis: 70%;
-    }
   }
 `;
 
@@ -64,6 +64,7 @@ export const FlexSB = styled.div`
 
 interface ColumnProps {
   $align?: 'left';
+  $centerMQ?: boolean;
   $gap?: boolean;
   $wrap?: boolean;
 }
@@ -76,6 +77,10 @@ export const Column = styled.div<ColumnProps>`
   gap: ${(props) => props.$gap && '32px'};
   flex: 1;
   white-space: ${(props) => (props.$wrap ? 'wrap' : 'nowrap')};
+
+  @media (max-width: 768px) {
+    align-items: ${(props) => props.$centerMQ && 'center'};
+  }
 `;
 
 interface RowProps {
@@ -110,6 +115,7 @@ export const DividerY = styled.div`
 interface TextProps {
   $textColor?: string;
   $textAlign?: 'center';
+  $textCenterMQ?: boolean;
   fontSize?: keyof typeof theme.fontSizes;
   fontWeight?: keyof typeof theme.fontWeights;
 }
@@ -124,6 +130,10 @@ export const Text = styled.p<TextProps>`
   font-weight: ${(props) =>
     props.fontWeight ? theme.fontWeights[props.fontWeight] : theme.fontWeights.normal};
   text-align: ${(props) => props.$textAlign && 'center'};
+
+  @media (max-width: 768px) {
+    text-align: ${(props) => props.$textCenterMQ && 'center'};
+  }
 `;
 
 export const Bold = styled.span`

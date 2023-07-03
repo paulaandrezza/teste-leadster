@@ -27,12 +27,12 @@ const Overview = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
-      color="secondary"
+      $color="secondary"
     >
       <Flex as={motion.div} variants={cardVariants} $noWrap>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
-        <Column $align={'left'} $wrap>
-          <Text fontSize="subtitle">
+        <Column $align={'left'} $wrap $centerMQ>
+          <Text fontSize="subtitle" $textCenterMQ>
             Pronto para triplicar sua <Bold>Geração de leads?</Bold>
           </Text>
           <Text fontWeight={'subtitle'}>
