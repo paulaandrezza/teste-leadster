@@ -70,15 +70,9 @@ TODO: Funcionalidades
 
 <br>
 
-## Instruções de Instalação
+## Instruções de Instalação e de Uso
 
 TODO: Como rodar o projeto
-
-<br>
-
-## Instruções de Uso
-
-TODO: instruções de uso
 
 <br>
 
@@ -86,5 +80,6 @@ TODO: instruções de uso
 
 - Nome: Paula Marinho
 - E-mail: [paulaandrezza25@gmail.com](mailto:paulaandrezza25@gmail.com)
-- GitHub: [Perfil no GitHub](https://github.com/paulaandrezza)
-- LinkedIn: [Perfil no LinkedIn](https://www.linkedin.com/in/paula-andrezza/)
+- [Perfil no GitHub](https://github.com/paulaandrezza)
+- [Perfil no LinkedIn](https://www.linkedin.com/in/paula-andrezza/)
+- [Meu portfólio](https://paulaandrezza.github.io/portfolio/)
