@@ -2,7 +2,7 @@
 
 import { Text } from '@/app/theme/shared';
 import { Video } from '@/types/videos';
-import photo from '@public/thumbnail.png';
+import photo from '@public/thumbnail.webp';
 import { motion, Variants } from 'framer-motion';
 import { Box, BoxImage, CardContent } from './styles';
 

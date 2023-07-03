@@ -11,10 +11,10 @@ import {
   Row,
   Text,
 } from '@/app/theme/shared';
-import comparativo from '@public/comparativo_img_CTA.png';
+import comparativo from '@public/comparativo_img_CTA.webp';
 import card from '@public/no-card-dark.webp';
 import rating from '@public/rating.webp';
-import selo from '@public/selo_RD.png';
+import selo from '@public/selo_RD.webp';
 import { Variants, motion } from 'framer-motion';
 import Image from 'next/image';
 import { FlexInfo, IconText } from './styles';
