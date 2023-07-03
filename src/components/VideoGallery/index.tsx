@@ -38,6 +38,7 @@ const VideoGallery = () => {
         order={order}
         setVideoCount={setVideoCount}
         page={page}
+        setPage={setPage}
         onVideoClick={openModal}
       />
       <VideoModal isOpen={isModalOpen} onClose={closeModal} video={video} />
