@@ -2,7 +2,7 @@
 
 import { Bold, Container, DividerX, Text } from '@/app/theme/shared';
 import { Variants, motion } from 'framer-motion';
-import { Tag, Title, Wrapper } from './styles';
+import { Subtitle, Tag, Title, Wrapper } from './styles';
 
 const cardVariants: Variants = {
   offscreen: {
@@ -29,10 +29,10 @@ const Hero = () => {
     >
       <Wrapper as={motion.div} variants={cardVariants}>
         <Tag>WEBINARS EXCLUSIVOS</Tag>
-        <Text fontSize="subtitle">Menos Conversinha,</Text>
+        <Subtitle>Menos Conversinha,</Subtitle>
         <Title>Mais Conversão</Title>
         <DividerX />
-        <Text fontWeight={'subtitle'}>
+        <Text fontWeight={'subtitle'} $textAlign="center">
           Conheça as estratégias que <Bold>mudaram o jogo</Bold> e como aplicá-las no seu négocio
         </Text>
       </Wrapper>
