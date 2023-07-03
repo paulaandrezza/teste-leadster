@@ -21,7 +21,7 @@ import { FlexInfo, IconText } from './styles';
 const Overview = () => {
   return (
     <Container color="secondary">
-      <Flex>
+      <Flex $noWrap>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
         <Column $align={'left'} $wrap>
           <Text fontSize="subtitle">

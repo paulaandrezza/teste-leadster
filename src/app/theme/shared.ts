@@ -26,6 +26,7 @@ export const Container = styled.div<ContainerProps>`
 
 interface FlexProps {
   $align?: 'top';
+  $noWrap?: boolean;
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -33,7 +34,7 @@ export const Flex = styled.div<FlexProps>`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: ${(props) => (props.$noWrap ? 'nowrap' : 'wrap')};
 
   @media (min-width: 1024px) {
     flex-direction: row;
