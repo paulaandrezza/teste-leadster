@@ -28,13 +28,13 @@ const Links = () => {
         <Wrapper $gap>
           <Row>
             <SocialBubble href="https://www.linkedin.com/company/getleadster/" target="_blank">
-              <FaLinkedinIn color="#808080" />
+              <FaLinkedinIn />
             </SocialBubble>
             <SocialBubble href="https://www.facebook.com/leadsterplatform/" target="_blank">
-              <FaFacebookF color="#808080" />
+              <FaFacebookF />
             </SocialBubble>
             <SocialBubble href="https://www.instagram.com/leadster.com.br/" target="_blank">
-              <FaInstagram color="#808080" />
+              <FaInstagram />
             </SocialBubble>
           </Row>
           <Wrapper>
