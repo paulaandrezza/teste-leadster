@@ -56,6 +56,14 @@ foram escolhidas.
 - Com o Styled Components, é possível escrever estilos encapsulados, facilitando a manutenção,
   reutilização e a criação de componentes estilizados de forma mais intuitiva.
 
+### 6. Uso do Framer Motion:
+
+- Optei por utilizar a biblioteca Framer Motion para animações no projeto.
+- O Framer Motion é uma biblioteca moderna e poderosa que fornece uma API simples para criar
+  animações fluidas e interativas.
+- Ele possui recursos como transições suaves, animações baseadas em física e a capacidade de animar
+  propriedades complexas.
+
 <br>
 
 ## 📚 Organização do Código

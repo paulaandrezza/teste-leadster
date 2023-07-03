@@ -15,13 +15,34 @@ import comparativo from '@public/comparativo_img_CTA.png';
 import card from '@public/no-card-dark.webp';
 import rating from '@public/rating.webp';
 import selo from '@public/selo_RD.png';
+import { Variants, motion } from 'framer-motion';
 import Image from 'next/image';
 import { FlexInfo, IconText } from './styles';
 
+const cardVariants: Variants = {
+  offscreen: {
+    y: 50,
+  },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
+
 const Overview = () => {
   return (
-    <Container color="secondary">
-      <Flex $noWrap>
+    <Container
+      as={motion.div}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+      color="secondary"
+    >
+      <Flex as={motion.div} variants={cardVariants} $noWrap>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
         <Column $align={'left'} $wrap>
           <Text fontSize="subtitle">

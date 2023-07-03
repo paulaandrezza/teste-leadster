@@ -6,11 +6,6 @@ import GlobalStyle from './theme/globalStyles';
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Leadster',
-  description: 'Leadster: Chatbot de Marketing para Aumentar Geração de Leads',
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br">

@@ -13,6 +13,12 @@ export const SocialBubble = styled.a`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  color: #808080;
+
+  &:hover {
+    background: #00aff0;
+    color: ${theme.colors['bg-primary']};
+  }
 `;
 
 export const Label = styled.span`
