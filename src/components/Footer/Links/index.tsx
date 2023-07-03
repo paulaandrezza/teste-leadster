@@ -16,7 +16,7 @@ const Links = () => {
             {item.links.map((link) => (
               <ListItem key={link.name}>
                 <Link href={link.url} target="_blank">
-                  <Text $textColor="secondary">{link.name}</Text>
+                  {link.name}
                 </Link>
               </ListItem>
             ))}

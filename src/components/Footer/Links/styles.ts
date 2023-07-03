@@ -3,6 +3,14 @@ import styled from 'styled-components';
 
 export const Link = styled.a`
   white-space: nowrap;
+
+  color: ${theme.colors['text-secondary']};
+  font-size: ${theme.fontSizes.normal};
+  font-weight: ${theme.fontWeights.normal};
+
+  &:hover {
+    color: ${theme.colors['blue-primary']};
+  }
 `;
 
 export const SocialBubble = styled.a`
@@ -13,10 +21,10 @@ export const SocialBubble = styled.a`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #808080;
+  color: ${theme.colors['text-secondary']};
 
   &:hover {
-    background: #00aff0;
+    background: ${theme.colors['blue-primary']};
     color: ${theme.colors['bg-primary']};
   }
 `;
