@@ -1,22 +1,9 @@
 'use client';
 
+import { cardVariants } from '@/animations/animations';
 import { Bold, Container, DividerX, Text } from '@/app/theme/shared';
-import { Variants, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Subtitle, Tag, Title, Wrapper } from './styles';
-
-const cardVariants: Variants = {
-  offscreen: {
-    y: 50,
-  },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: 'spring',
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
 
 const Hero = () => {
   return (

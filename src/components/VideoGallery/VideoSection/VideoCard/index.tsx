@@ -1,23 +1,10 @@
 'use client';
 
+import { cardVariants } from '@/animations/animations';
 import { Text } from '@/app/theme/shared';
 import { Video } from '@/types/videos';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Box, BoxImage, CardContent } from './styles';
-
-const cardVariants: Variants = {
-  offscreen: {
-    y: 50,
-  },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: 'spring',
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
 
 interface Props extends Video {
   onClick: () => void;
