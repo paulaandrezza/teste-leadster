@@ -1,5 +1,6 @@
 'use client';
 
+import { cardVariants } from '@/animations/animations';
 import {
   Bold,
   Button,
@@ -11,27 +12,13 @@ import {
   Row,
   Text,
 } from '@/app/theme/shared';
-import comparativo from '@public/comparativo_img_CTA.png';
+import comparativo from '@public/comparativo_img_CTA.webp';
 import card from '@public/no-card-dark.webp';
 import rating from '@public/rating.webp';
-import selo from '@public/selo_RD.png';
-import { Variants, motion } from 'framer-motion';
+import selo from '@public/selo_RD.webp';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FlexInfo, IconText } from './styles';
-
-const cardVariants: Variants = {
-  offscreen: {
-    y: 50,
-  },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: 'spring',
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
 
 const Overview = () => {
   return (

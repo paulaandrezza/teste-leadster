@@ -1,7 +1,7 @@
 'use client';
 
 import { Container } from '@/app/theme/shared';
-import logo from '@public/logo.png';
+import logo from '@public/logo.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -16,7 +16,7 @@ const Header = () => {
           stiffness: 100,
         }}
       >
-        <Image src={logo} alt="leadster-logo"></Image>
+        <Image src={logo} alt="leadster-logo" width={200}></Image>
       </motion.div>
     </Container>
   );

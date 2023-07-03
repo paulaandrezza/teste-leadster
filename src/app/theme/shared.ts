@@ -7,7 +7,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 100vw;
-  padding: 40px 80px;
+  padding: 40px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,6 +109,7 @@ export const DividerY = styled.div`
 
 interface TextProps {
   $textColor?: string;
+  $textAlign?: 'center';
   fontSize?: keyof typeof theme.fontSizes;
   fontWeight?: keyof typeof theme.fontWeights;
 }
@@ -122,6 +123,7 @@ export const Text = styled.p<TextProps>`
     props.fontSize ? theme.fontSizes[props.fontSize] : theme.fontSizes.normal};
   font-weight: ${(props) =>
     props.fontWeight ? theme.fontWeights[props.fontWeight] : theme.fontWeights.normal};
+  text-align: ${(props) => props.$textAlign && 'center'};
 `;
 
 export const Bold = styled.span`

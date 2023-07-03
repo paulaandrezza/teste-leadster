@@ -1,30 +1,16 @@
 'use client';
 
+import { cardVariants } from '@/animations/animations';
 import { Text } from '@/app/theme/shared';
 import { Video } from '@/types/videos';
-import photo from '@public/thumbnail.png';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Box, BoxImage, CardContent } from './styles';
-
-const cardVariants: Variants = {
-  offscreen: {
-    y: 50,
-  },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: 'spring',
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
 
 interface Props extends Video {
   onClick: () => void;
 }
 
-const VideoCard = ({ title, onClick }: Props) => {
+const VideoCard = ({ title, photo, onClick }: Props) => {
   return (
     <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
       <Box
@@ -34,7 +20,7 @@ const VideoCard = ({ title, onClick }: Props) => {
         variants={cardVariants}
         onClick={onClick}
       >
-        <BoxImage src={photo} alt="Prévia vídeo" />
+        <BoxImage src={photo} width={362} height={204} alt="Prévia vídeo" />
         <CardContent>
           <Text fontWeight="bold">{title}</Text>
         </CardContent>
