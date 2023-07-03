@@ -68,19 +68,144 @@ foram escolhidas.
 
 ## 📚 Organização do Código
 
-TODO: Como organizei o código
+A estrutura de pastas do projeto é organizada da seguinte forma:
+
+```
+├── public
+│   └── ...
+│
+└── src
+    ├── animations
+    │   └── animations.ts
+    │
+    ├── app
+    │   ├── favicon.ico
+    │   ├── layout.tsx
+    │   ├── page.tsx
+    │   └── theme
+    │       ├── globalStyles.ts
+    │       ├── shared.ts
+    │       └── theme.ts
+    │
+    ├── components
+    │   ├── Footer
+    │   │   └── ...
+    │   │
+    │   ├── Header
+    │   │   └── ...
+    │   │
+    │   ├── Hero
+    │   │   └── ...
+    │   │
+    │   ├── Overview
+    │   │   └── ...
+    │   │
+    │   └── VideoGallery
+    │       └── ...
+    │
+    ├── data
+    │   └── videos.json
+    │
+    ├── lib
+    │   └── registry.tsx
+    │
+    └── types
+        └── videos.ts
+```
+
+- Na pasta `public`, encontramos os arquivos estáticos relacionados à aplicação. Todos esses
+  arquivos são acessíveis publicamente.
+
+- Dentro da pasta `src`, encontramos a pasta `animations`, que contém o arquivo `animations.ts`
+  relacionado a animações específicas do projeto. A pasta `app` que define a estrutura principal,
+  contendo os arquivos:
+
+  - `favicon.ico`, ícone da página
+  - `layout.tsx`, é uma interface compartilhada entre rotas.
+  - `page.tsx`, interface exclusiva para uma rota.
+  - além da pasta `theme` que contém os arquivos relacionados a estilos globais e compartilhados da
+    aplicação.
+
+- Dentro da pasta `components`, temos diversos componentes reutilizáveis, como `Footer`, `Header`,
+  `Hero`, `Overview` e `VideoGallery`, cada um com sua estrutura de arquivos específica.
+
+- A pasta `data` contém o arquivo `videos.json` com os dados relacionados aos vídeos.
+
+- A pasta `lib` contém o arquivo `registry.tsx` que é responsável por lidar com a renderização
+  correta e o gerenciamento de estilos do pacote Styled Components em uma aplicação Next.js.
+
+- A pasta `types` contém o arquivo `videos.ts` com definições de tipos relacionados aos vídeos.
 
 <br>
 
-## Funcionalidades
+## 🎯 Funcionalidades
 
-TODO: Funcionalidades
+O projeto é uma landing page que possui uma seção de vídeos, na qual os usuários podem filtrar e
+ordenar os vídeos de acordo com suas preferências. Além disso, a seção de vídeos é paginada,
+permitindo que os usuários naveguem pelos vídeos de forma mais conveniente.
+
+As funcionalidades principais do projeto incluem:
+
+1. Filtragem de Vídeos: Os usuários podem aplicar filtros para restringir os vídeos exibidos com
+   base em critérios específicos, como categoria, data de upload ou outro atributo relevante.
+
+2. Ordenação de Vídeos: Os usuários podem escolher a ordem em que os vídeos são exibidos. Por
+   exemplo, eles podem ordenar por populdata de publicação ou ordem alfabética.
+
+3. Paginação: Como a seção de vídeos pode conter um grande número de vídeos, a paginação permite que
+   os usuários naveguem pelos diferentes conjuntos de vídeos em páginas separadas, tornando a
+   experiência mais organizada e fácil de usar.
 
 <br>
 
-## Instruções de Instalação e de Uso
+## 💻 Instruções de Instalação e de Uso
 
-TODO: Como rodar o projeto
+Para instalar e usar o projeto "teste-leadster", siga as instruções abaixo:
+
+1. Faça um fork do projeto no GitHub: Acesse o link
+   [https://github.com/paulaandrezza/teste-leadster](https://github.com/paulaandrezza/teste-leadster)
+   e clique no botão "Fork" no canto superior direito da página. Isso criará uma cópia do projeto em
+   seu próprio repositório do GitHub.
+
+2. Clone o repositório: No seu terminal, navegue até o diretório onde deseja clonar o projeto e
+   execute o seguinte comando:
+
+   ```
+   git clone https://github.com/SEU_USUARIO_GITHUB/teste-leadster.git
+   ```
+
+   Certifique-se de substituir "SEU_USUARIO_GITHUB" pelo seu nome de usuário no GitHub.
+
+3. Acesse o diretório do projeto: Execute o seguinte comando no terminal para entrar no diretório do
+   projeto:
+
+   ```
+   cd teste-leadster
+   ```
+
+4. Instale as dependências: Execute o comando a seguir para instalar as dependências do projeto
+   usando o npm:
+
+   ```
+   npm install
+   ```
+
+5. Inicie o servidor de desenvolvimento: Após a conclusão da instalação das dependências, execute o
+   seguinte comando para iniciar o servidor de desenvolvimento:
+
+   ```
+   npm run dev
+   ```
+
+6. Acesse o projeto: Abra o seu navegador e digite o seguinte endereço:
+   ```
+   http://localhost:3000
+   ```
+   Agora você poderá visualizar e interagir com o projeto "teste-leadster" localmente em seu
+   ambiente de desenvolvimento.
+
+É possível acessar o deploy do projeto no seguinte link:
+[Teste Leadster](https://teste-leadster-paulaandrezza.vercel.app/).
 
 <br>
 
