@@ -2,7 +2,6 @@
 
 import { Text } from '@/app/theme/shared';
 import { Video } from '@/types/videos';
-import photo from '@public/thumbnail.webp';
 import { motion, Variants } from 'framer-motion';
 import { Box, BoxImage, CardContent } from './styles';
 
@@ -24,7 +23,7 @@ interface Props extends Video {
   onClick: () => void;
 }
 
-const VideoCard = ({ title, onClick }: Props) => {
+const VideoCard = ({ title, photo, onClick }: Props) => {
   return (
     <motion.div initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
       <Box
@@ -34,7 +33,7 @@ const VideoCard = ({ title, onClick }: Props) => {
         variants={cardVariants}
         onClick={onClick}
       >
-        <BoxImage src={photo} alt="Prévia vídeo" />
+        <BoxImage src={photo} width={362} height={204} alt="Prévia vídeo" />
         <CardContent>
           <Text fontWeight="bold">{title}</Text>
         </CardContent>
