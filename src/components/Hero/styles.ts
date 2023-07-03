@@ -17,7 +17,7 @@ export const Tag = styled.p`
   color: ${theme.colors['blue-secondary']};
   font-weight: bold;
   padding: 8px 32px;
-  border: 4px solid ${theme.colors['blue-secondary']};
+  border: 3px solid ${theme.colors['blue-secondary']};
   border-radius: 24px 24px 24px 4px;
   margin-bottom: 32px;
 `;
