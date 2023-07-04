@@ -7,7 +7,6 @@ export const Box = styled.div`
   box-shadow: 0 4px 32px #00000050;
   display: grid;
   grid-template-columns: fit-content(0);
-  grid-template-row: 1fr 1fr;
   cursor: pointer;
 `;
 
@@ -18,7 +17,6 @@ export const BoxImage = styled(Image)`
   border-radius: 16px 16px 0 0;
 
   @media (max-width: 425px) {
-    width: 100vw;
     height: auto;
   }
 `;
