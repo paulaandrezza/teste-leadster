@@ -12,13 +12,25 @@ const LinkContact = () => {
       <Text fontWeight="bold">Siga a Leadster</Text>
       <Wrapper $gap>
         <Row>
-          <SocialBubble href="https://www.linkedin.com/company/getleadster/" target="_blank">
+          <SocialBubble
+            href="https://www.linkedin.com/company/getleadster/"
+            target="_blank"
+            aria-label="LinkedIn da Leadster"
+          >
             <FaLinkedinIn />
           </SocialBubble>
-          <SocialBubble href="https://www.facebook.com/leadsterplatform/" target="_blank">
+          <SocialBubble
+            href="https://www.facebook.com/leadsterplatform/"
+            target="_blank"
+            aria-label="Facebook da Leadster"
+          >
             <FaFacebookF />
           </SocialBubble>
-          <SocialBubble href="https://www.instagram.com/leadster.com.br/" target="_blank">
+          <SocialBubble
+            href="https://www.instagram.com/leadster.com.br/"
+            target="_blank"
+            aria-label="Instagram da Leadster"
+          >
             <FaInstagram />
           </SocialBubble>
         </Row>
