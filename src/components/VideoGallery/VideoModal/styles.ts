@@ -24,7 +24,8 @@ export const ModalContent = styled.div`
   border-top: 4px solid ${theme.colors['blue-secondary']};
 
   @media (max-width: 425px) {
-    width: 100vw;
+    width: 100%;
+    margin: 0 16px;
   }
 `;
 
