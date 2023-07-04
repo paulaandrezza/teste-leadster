@@ -10,7 +10,7 @@ interface Props {
 
 const LinkItem = ({ item }: Props) => {
   return (
-    <Column $gap $align="left">
+    <Column $gap $gapMQ $align="left">
       <Text fontWeight="bold">{item.category}</Text>
       <List $align="start">
         {item.links.map((link) => (
