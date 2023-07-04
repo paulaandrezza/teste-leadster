@@ -16,6 +16,11 @@ export const BoxImage = styled(Image)`
   width: 362px;
   height: 204px;
   border-radius: 16px 16px 0 0;
+
+  @media (max-width: 425px) {
+    width: 100vw;
+    height: auto;
+  }
 `;
 
 export const CardContent = styled.div`
