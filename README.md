@@ -68,6 +68,16 @@ foram escolhidas.
 - Ele possui recursos como transições suaves, animações baseadas em física e a capacidade de animar
   propriedades complexas.
 
+### 7. Uso do JSON Server:
+
+- Escolhi o JSON Server para simular o recebimento de dados do backend.
+- O JSON Server é uma ferramenta simples e fácil de usar que permite criar uma API REST completa com
+  base em um arquivo JSON.
+- Com o JSON Server, posso definir endpoints, criar rotas e definir os dados que serão retornados em
+  formato JSON.
+- Isso é especialmente útil durante o desenvolvimento, pois posso ter um ambiente local para testar
+  a integração do frontend com o backend simulado, sem depender de um servidor real.
+
 <br>
 
 ## 📚 Organização do Código
@@ -187,15 +197,49 @@ Para instalar e usar o projeto "teste-leadster", siga as instruções abaixo:
    cd teste-leadster
    ```
 
-4. Instale as dependências: Execute o comando a seguir para instalar as dependências do projeto
-   usando o npm:
+4. O projeto possui 2 branchs, a main e a fake-api, a main possui um arquivo json onde estão os
+   videos salvos, a fake-api também possui o arquivo json, porém para acessá-lo é preciso iniciar o
+   json-server. Os próximos passos serão divididos para cada um dos casos:
+
+   **4.1 Branch main**: essa é a branch padrão em que o projeto inicia, para executar o projeto com
+   ela siga os seguintes passos:
+
+   4.1.1. Instale as dependências: Execute o comando a seguir para instalar as dependências do
+   projeto usando o npm:
 
    ```
    npm install
    ```
 
-5. Inicie o servidor de desenvolvimento: Após a conclusão da instalação das dependências, execute o
-   seguinte comando para iniciar o servidor de desenvolvimento:
+   **4.2 Branch feat/fake-api**: essa é a branch onde existe a fake api, para executar o projeto com
+   ela siga os seguintes passos:
+
+   4.2.1 Troque para a branch main: Execute o comando a seguir para instalar as alterar a branch:
+
+   ```
+   git checkout feat/fake-api
+   ```
+
+   4.2.2. Instale as dependências: Execute o comando a seguir para instalar as dependências do
+   projeto usando o npm:
+
+   ```
+   npm install
+   ```
+
+   4.2.2. Inicie o servidor da nossa fake API: Execute o comando a seguir no terminal para iniciar a
+   API, lembrando que o `-p 8000` é para definir a porta 8000 para a api e não conflitar com a porta
+   3000 que é onde roda o front-end:
+
+   ```
+   json-server --watch db.json -p 8000
+   ```
+
+**Os passos a partir daqui são iguais, tanto para a branch main quando para a fake-api**
+
+5. Inicie o servidor de desenvolvimento: Se estiver usando a fake-api em outro terminal execute o
+   seguinte comando para iniciar o servidor de desenvolvimento, se for a main pode executar no
+   terminal normal, pois ela não necessita da API:
 
    ```
    npm run dev
