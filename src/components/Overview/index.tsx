@@ -33,7 +33,7 @@ const Overview = () => {
       <Flex as={motion.div} variants={cardVariants} $noWrap>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
         <Column $align={'left'} $wrap $centerMQ>
-          <Subtitle $FWnormal>
+          <Subtitle $FWnormal $testAlignLeft>
             Pronto para triplicar sua <Bold>Geração de leads?</Bold>
           </Subtitle>
           <Text fontWeight={'subtitle'}>
