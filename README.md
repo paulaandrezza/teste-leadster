@@ -194,14 +194,22 @@ Para instalar e usar o projeto "teste-leadster", siga as instruções abaixo:
    npm install
    ```
 
-5. Inicie o servidor de desenvolvimento: Após a conclusão da instalação das dependências, execute o
-   seguinte comando para iniciar o servidor de desenvolvimento:
+5. Inicie o servidor da nossa fake API: Execute o comando a seguir no terminal para iniciar a API,
+   lembrando que o `-p 8000` é para definir a porta 8000 para a api e não conflitar com a porta 3000
+   que é onde roda o front-end:
+
+   ```
+   json-server --watch db.json -p 8000
+   ```
+
+6. Inicie o servidor de desenvolvimento: Em outro terminal execute o seguinte comando para iniciar o
+   servidor de desenvolvimento:
 
    ```
    npm run dev
    ```
 
-6. Acesse o projeto: Abra o seu navegador e digite o seguinte endereço:
+7. Acesse o projeto: Abra o seu navegador e digite o seguinte endereço:
    ```
    http://localhost:3000
    ```

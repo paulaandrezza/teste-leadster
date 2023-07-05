@@ -1,5 +1,5 @@
-import videos from '@/data/videos.json';
+import videos from '../../db.json';
 
-export type Videos = typeof videos;
+export type Videos = typeof videos.videos;
 
-export type Video = (typeof videos)[0];
+export type Video = (typeof videos.videos)[0];

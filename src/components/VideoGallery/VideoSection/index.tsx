@@ -1,7 +1,7 @@
 'use client';
 
+import { getVideos } from '@/app/api/videos';
 import { Container } from '@/app/theme/shared';
-import videos from '@/data/videos.json';
 import { Video, Videos } from '@/types/videos';
 import { useEffect, useState } from 'react';
 import VideoCard from './VideoCard';
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const VideoSection = ({ filter, order, setVideoCount, page, setPage, onVideoClick }: Props) => {
-  const [list, setList] = useState(videos);
+  const [list, setList] = useState<Videos>([]);
   const [prevPage, setPrevPage] = useState(page);
 
   function filterBy(id: number) {
@@ -41,16 +41,26 @@ const VideoSection = ({ filter, order, setVideoCount, page, setPage, onVideoClic
   }
 
   useEffect(() => {
-    setPrevPage(page);
-    const newList = videos.filter((item) => filterBy(item.category.id));
-    setVideoCount(newList.length);
+    async function initializeVideos() {
+      try {
+        const videos = await getVideos();
+        setList(videos);
+        setPrevPage(page);
 
-    if (page === prevPage) setPage(0);
+        const newList = videos.filter((item: Video) => filterBy(item.category.id));
+        setVideoCount(newList.length);
 
-    const startIndex = page * 9;
-    const endIndex = startIndex + 9;
+        if (page === prevPage) setPage(0);
 
-    setList(orderBy(newList).slice(startIndex, endIndex));
+        const startIndex = page * 9;
+        const endIndex = startIndex + 9;
+
+        setList(orderBy(newList).slice(startIndex, endIndex));
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    initializeVideos();
   }, [filter, order, page]);
 
   return (
