@@ -66,6 +66,7 @@ interface ColumnProps {
   $align?: 'left';
   $centerMQ?: boolean;
   $gap?: boolean;
+  $gapMQ?: boolean;
   $wrap?: boolean;
 }
 
@@ -81,10 +82,16 @@ export const Column = styled.div<ColumnProps>`
   @media (max-width: 768px) {
     align-items: ${(props) => props.$centerMQ && 'center'};
   }
+
+  @media (max-width: 1024px) {
+    gap: ${(props) => props.$gapMQ && '4px'};
+    margin-bottom: ${(props) => props.$gapMQ && '16px'};
+  }
 `;
 
 interface RowProps {
   $align?: 'end';
+  $columnMQ?: boolean;
 }
 
 export const Row = styled.div<RowProps>`
@@ -93,6 +100,10 @@ export const Row = styled.div<RowProps>`
   align-items: ${(props) => (props.$align == 'end' ? 'flex-end' : 'center')};
   justify-content: center;
   gap: 16px;
+
+  @media (max-width: 375px) {
+    flex-direction: ${(props) => props.$columnMQ && 'column'};
+  }
 `;
 
 export const DividerX = styled.div`
@@ -133,6 +144,21 @@ export const Text = styled.p<TextProps>`
 
   @media (max-width: 768px) {
     text-align: ${(props) => props.$textCenterMQ && 'center'};
+  }
+`;
+
+interface SubtitleProps {
+  $FWnormal?: boolean;
+}
+
+export const Subtitle = styled.h2<SubtitleProps>`
+  color: ${theme.colors['text-primary']};
+  font-size: ${theme.fontSizes.heading};
+  font-weight: ${(props) => (props.$FWnormal ? theme.fontWeights.normal : theme.fontWeights.bold)};
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: ${theme.fontSizes.subtitle};
   }
 `;
 

@@ -1,9 +1,9 @@
 'use client';
 
 import { cardVariants } from '@/animations/animations';
-import { Bold, Container, DividerX, Text } from '@/app/theme/shared';
+import { Bold, Container, DividerX, Subtitle, Text } from '@/app/theme/shared';
 import { motion } from 'framer-motion';
-import { Subtitle, Tag, Title, Wrapper } from './styles';
+import { Tag, Title, Wrapper } from './styles';
 
 const Hero = () => {
   return (
@@ -17,7 +17,9 @@ const Hero = () => {
       <Wrapper as={motion.div} variants={cardVariants}>
         <Tag>WEBINARS EXCLUSIVOS</Tag>
         <Subtitle>Menos Conversinha,</Subtitle>
-        <Title>Mais Conversão</Title>
+        <Title>
+          Mais <span>Conversão</span>
+        </Title>
         <DividerX />
         <Text fontWeight={'subtitle'} $textAlign="center">
           Conheça as estratégias que <Bold>mudaram o jogo</Bold> e como aplicá-las no seu négocio

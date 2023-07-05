@@ -11,13 +11,22 @@ export const ModalOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 425px) {
+    overflow-y: auto;
+  }
 `;
 
 export const ModalContent = styled.div`
   background-color: ${theme.colors['bg-primary']};
-  max-width: 500px;
+  width: 500px;
   border-radius: 8px;
   border-top: 4px solid ${theme.colors['blue-secondary']};
+
+  @media (max-width: 425px) {
+    width: 100%;
+    margin: 0 16px;
+  }
 `;
 
 export const MiniModalContent = styled.div`
@@ -30,6 +39,10 @@ export const MiniModalContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -52,10 +65,14 @@ export const DivButton = styled.div`
 `;
 
 export const BoxTitle = styled.div`
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
 `;
 
 export const BlueText = styled.span`
@@ -73,8 +90,13 @@ export const ContentChild = styled.div``;
 
 export const RowButtons = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 8px;
+  align-items: flex-start;
+
+  @media (min-width: 425px) {
+    flex-direction: row;
+  }
 `;
 
 interface DownloadButtonProps {
@@ -101,6 +123,16 @@ export const DownloadButton = styled.button<DownloadButtonProps>`
     background: ${(props) => (props.bg1 ? `${props.bg1}` : '#C2F4EA')};
     border-radius: 8px 0 0 8px;
     height: 100%;
+    width: 100%;
+  }
+`;
+
+export const ResponsiveIframe = styled.iframe`
+  width: 100%;
+  height: 282px;
+
+  @media (max-width: 767px) {
+    height: 200px;
     width: 100%;
   }
 `;

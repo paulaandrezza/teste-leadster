@@ -56,7 +56,7 @@ foram escolhidas.
   em uma tentativa anterior com o Next.js 13 e Styled Components, enfrentei erros persistentes que
   me impediram de prosseguir. Pesquisando mais a fundo, descobri que o Next.js 13 ainda não oferecia
   suporte ao Styled Components. Felizmente, ao verificar novamente, percebi que o suporte já estava
-  disponível, se não tivesse faria o projeto com o Next.js 12.
+  disponível, se não estivesse faria o projeto com o Next.js 12.
 - Com o Styled Components, é possível escrever estilos encapsulados, facilitando a manutenção,
   reutilização e a criação de componentes estilizados de forma mais intuitiva.
 

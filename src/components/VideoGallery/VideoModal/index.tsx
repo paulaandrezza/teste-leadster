@@ -12,6 +12,7 @@ import {
   MiniModalContent,
   ModalContent,
   ModalOverlay,
+  ResponsiveIframe,
   RowButtons,
 } from './styles';
 
@@ -47,15 +48,13 @@ const VideoModal = ({ isOpen, onClose, video }: Props) => {
             {video?.title}
           </Text>
         </BoxTitle>
-        <iframe
-          width="100%"
-          height="282"
+        <ResponsiveIframe
           src={video?.videoLink}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-        ></iframe>
+        ></ResponsiveIframe>
         <Content>
           <ContentChild>
             <Text fontSize="small" fontWeight="bold">

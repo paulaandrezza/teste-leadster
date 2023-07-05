@@ -10,6 +10,7 @@ import {
   DividerY,
   Flex,
   Row,
+  Subtitle,
   Text,
 } from '@/app/theme/shared';
 import comparativo from '@public/comparativo_img_CTA.webp';
@@ -32,14 +33,14 @@ const Overview = () => {
       <Flex as={motion.div} variants={cardVariants} $noWrap>
         <Image src={comparativo} alt="gráfico" layout="responsive" />
         <Column $align={'left'} $wrap $centerMQ>
-          <Text fontSize="subtitle" $textCenterMQ>
+          <Subtitle $FWnormal>
             Pronto para triplicar sua <Bold>Geração de leads?</Bold>
-          </Text>
+          </Subtitle>
           <Text fontWeight={'subtitle'}>
             Criação e ativação em <Bold>4 minutos.</Bold>
           </Text>
           <DividerX />
-          <Row>
+          <Row $columnMQ>
             <Button>VER DEMONSTRAÇÃO</Button>
             <Image src={selo} alt="Top 10 - Apps mais Usados | RD Station" height="50" />
           </Row>

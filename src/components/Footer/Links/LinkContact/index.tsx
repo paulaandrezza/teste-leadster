@@ -8,7 +8,7 @@ import { Label, SocialBubble } from './styles';
 
 const LinkContact = () => {
   return (
-    <Column $gap $align="left">
+    <Column $gap $gapMQ $align="left">
       <Text fontWeight="bold">Siga a Leadster</Text>
       <Wrapper $gap>
         <Row>
