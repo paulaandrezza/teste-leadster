@@ -149,6 +149,7 @@ export const Text = styled.p<TextProps>`
 
 interface SubtitleProps {
   $FWnormal?: boolean;
+  $testAlignLeft?: boolean;
 }
 
 export const Subtitle = styled.h2<SubtitleProps>`
@@ -159,6 +160,7 @@ export const Subtitle = styled.h2<SubtitleProps>`
 
   @media (min-width: 768px) {
     font-size: ${theme.fontSizes.subtitle};
+    text-align: ${(props) => (props.$testAlignLeft ? 'left' : 'center')};
   }
 `;
 
