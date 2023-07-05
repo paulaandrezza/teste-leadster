@@ -1,6 +1,5 @@
 'use client';
 
-import { cardVariants } from '@/animations/animations';
 import { Text } from '@/app/theme/shared';
 import { Video } from '@/types/videos';
 import { motion } from 'framer-motion';
@@ -17,7 +16,6 @@ const VideoCard = ({ title, photo, onClick }: Props) => {
         as={motion.div}
         whileHover={{ scale: 1.02 }}
         transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-        variants={cardVariants}
         onClick={onClick}
       >
         <BoxImage src={photo} width={362} height={204} alt="Prévia vídeo" />
