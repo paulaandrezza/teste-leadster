@@ -68,6 +68,16 @@ foram escolhidas.
 - Ele possui recursos como transições suaves, animações baseadas em física e a capacidade de animar
   propriedades complexas.
 
+### 7. Uso do JSON Server:
+
+- Escolhi o JSON Server para simular o recebimento de dados do backend.
+- O JSON Server é uma ferramenta simples e fácil de usar que permite criar uma API REST completa com
+  base em um arquivo JSON.
+- Com o JSON Server, posso definir endpoints, criar rotas e definir os dados que serão retornados em
+  formato JSON.
+- Isso é especialmente útil durante o desenvolvimento, pois posso ter um ambiente local para testar
+  a integração do frontend com o backend simulado, sem depender de um servidor real.
+
 <br>
 
 ## 📚 Organização do Código
